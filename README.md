@@ -7,7 +7,7 @@ _he_ (for “HTML entities”) is a robust HTML entity encoder/decoder written i
 ```js
 import he from "https://code4fukui.github.io/he-es/he.esm.js";
 
-console.log(he.encode("©2022"));
+console.log(he.encode("©2022 <he>")); // &#xA9;2022 &#x3C;he&#x3E;
 ```
 
 ## Installation

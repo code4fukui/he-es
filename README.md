@@ -2,6 +2,14 @@
 
 _he_ (for “HTML entities”) is a robust HTML entity encoder/decoder written in JavaScript. It supports [all standardized named character references as per HTML](https://html.spec.whatwg.org/multipage/syntax.html#named-character-references), handles [ambiguous ampersands](https://mathiasbynens.be/notes/ambiguous-ampersands) and other edge cases [just like a browser would](https://html.spec.whatwg.org/multipage/syntax.html#tokenizing-character-references), has an extensive test suite, and — contrary to many other JavaScript solutions — _he_ handles astral Unicode symbols just fine. [An online demo is available.](https://mothereff.in/html-entities)
 
+## use on browser or Deno
+
+```
+import he from "https://code4fukui.github.io/he-es/he.esm.js";
+
+console.log(he.encode("©2022"));
+```
+
 ## Installation
 
 Via [npm](https://www.npmjs.com/):
